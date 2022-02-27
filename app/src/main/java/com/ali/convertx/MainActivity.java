@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         String dollars = dollarAmount.getText().toString();
         Double doubleDollars = Double.parseDouble(dollars);
         Double doubleInr = 74.70 * doubleDollars;
-        String toastText = "= " + doubleInr.toString() + " Rs";
+        String toastText = "= Rs. " + doubleInr.toString();
 
         Toast.makeText(this, toastText, Toast.LENGTH_SHORT).show();
     }
