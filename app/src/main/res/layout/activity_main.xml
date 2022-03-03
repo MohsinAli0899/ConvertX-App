@@ -14,8 +14,8 @@
         android:layout_marginLeft="10sp"
         android:layout_marginTop="80dp"
         android:layout_marginRight="10sp"
-        android:text="ConvertX"
-        android:textColor="#0E0E0E"
+        android:text="@string/convertx"
+        android:textColor="#7CB342"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -28,14 +28,16 @@
         android:layout_height="77dp"
         android:layout_marginTop="272dp"
         android:ems="10"
-        android:hint="Enter the Amount in Dollars"
+        android:hint="@string/enter_the_amount_in_dollars"
         android:inputType="number"
         android:textColorHighlight="#040303"
+        android:textColorHint="#E1BEE7"
         android:textColorLink="#0C0C0C"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/button"
@@ -44,13 +46,14 @@
         android:layout_marginTop="52dp"
         android:fontFamily="sans-serif-medium"
         android:onClick="btnClick"
-        android:text="Get INR Amount"
+        android:text="@string/get_inr_amount"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="@color/black"
+        android:textColor="#4A148C"
         app:backgroundTint="#03A9F4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dollarAmount" />
+        app:layout_constraintTop_toBottomOf="@+id/dollarAmount"
+        tools:ignore="TextContrastCheck" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -60,7 +63,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/cur" />
+        app:srcCompat="@drawable/cur"
+        android:contentDescription="TODO" />
 
     <TextView
         android:id="@+id/textView2"

@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">convertx</string>
+    <string name="convertx">ConvertX</string>
+    <string name="enter_the_amount_in_dollars">Enter the Amount in Dollars</string>
+    <string name="get_inr_amount">Get INR Amount</string>
 </resources>
